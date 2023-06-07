@@ -1049,7 +1049,7 @@ function onMessageArrived(message) {
 
 
 			if (this.connectOptions.mqttVersion < 4) {
-				this.socket = new WebSocket(wsurl, ["mqttv3.1"]);
+				this.socket = new WebSocket(wsurl);
 			} else {
 				this.socket = new WebSocket(wsurl, ["mqtt"]);
 			}
